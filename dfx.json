@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "projectbid_backend": {
+      "main": "src/projectbid_backend/main.mo",
+      "type": "motoko"
+    },
+    "projectbid_frontend": {
+      "dependencies": [
+        "projectbid_backend"
+      ],
+      "source": [
+        "src/projectbid_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "projectbid_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
